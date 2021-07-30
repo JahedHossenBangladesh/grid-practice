@@ -19,7 +19,7 @@
 } */
 
 /* Learn the grid return  */
-.container {
+/* .container {
   margin: 20px;
   width: 100%;
   display: grid;
@@ -39,6 +39,37 @@
 
   grid-row-start: 1;
   grid-row-end: 4;
+}
+.el4 {
+  background-color: darkgreen;
+} */
+/* grid added line name */
+.container {
+  margin: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows:
+    [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto)
+    [row-2-end row-3-start] 400px [row-3-end];
+}
+.el1 {
+  background-color: antiquewhite;
+}
+.el2 {
+  background-color: rgb(48, 123, 189);
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: row-2-start;
+  grid-row-end: span 1;
+  z-index: 10;
+}
+.el3 {
+  background-color: brown;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: row-1-start;
+  grid-row-end: row-2-end;
 }
 .el4 {
   background-color: darkgreen;
