@@ -1,0 +1,15 @@
+.container {
+  margin: 20px;
+}
+.el1 {
+  background-color: antiquewhite;
+}
+.el2 {
+  background-color: rgb(48, 123, 189);
+}
+.el3 {
+  background-color: brown;
+}
+.el4 {
+  background-color: darkgreen;
+}
