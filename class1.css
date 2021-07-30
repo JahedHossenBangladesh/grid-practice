@@ -1,8 +1,9 @@
-.container {
+/* .container {
   margin: 20px;
   width: 100%;
   display: grid;
-  grid-template-columns: 4fr 2fr 20% 1fr;
+  grid-template-columns: 4fr 2fr 20%;
+  grid-template-rows: 5rem 10rem;
 }
 .el1 {
   background-color: antiquewhite;
@@ -12,6 +13,32 @@
 }
 .el3 {
   background-color: brown;
+}
+.el4 {
+  background-color: darkgreen;
+} */
+
+/* Learn the grid return  */
+.container {
+  margin: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 5rem minmax(10px, auto) 400px;
+}
+.el1 {
+  background-color: antiquewhite;
+}
+.el2 {
+  background-color: rgb(48, 123, 189);
+}
+.el3 {
+  background-color: brown;
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 .el4 {
   background-color: darkgreen;
