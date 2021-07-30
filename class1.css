@@ -1,5 +1,8 @@
 .container {
   margin: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 2fr 20% 1fr;
 }
 .el1 {
   background-color: antiquewhite;
